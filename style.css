@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    background-color: #e9ecef;
+    padding: 50px 10%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 80px;
+    font-weight: 900;
+    margin-right: auto ;
+}
+
+.name--title {
+    text-decoration: none;
+    color: #000;
+}
+
+
+h1, p {
+    margin: 0;
+}
+
+.portfolio {
+    font-size: 30px;
+}
+
+.links {
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    color: black;
+    margin-left: auto;
+    
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 30px;
+
+}
+
+.intro p {
+  font-size: 30px;
+  line-height: 0.03em;
+}
+
+.works {
+    line-height: 0;
+    display: flex;
+}
+
+.work {
+    position: relative;
+}
+
+.work a {
+    text-decoration: none;
+}
+
+.img--title {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    margin-top: -35%;
+    font-weight:900;
+    letter-spacing: 0.1em;
+    font-family: 'Bebas Neue';
+}
+
+.img--title {
+    visibility: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.work:hover .img--title{
+    visibility: visible; opacity: 1;
+}
+
+
+.type--label {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.first {
+    height: 100%;
+}
+
+ul[data-bsp-ul-index] {
+          padding:0 0 0 0;
+         
+ }
+ul[data-bsp-ul-index] li {
+          list-style:none;
+          align-items: center;
+          display: flex;
+          margin: 0;
+          padding: 10px;
+          
+} 
+
+#bsPhotoGalleryModal .modal-content {
+    border-radius:0;
+    margin: 0;
+}
+#bsPhotoGalleryModal .modal-dialog img {
+    text-align:center;
+    margin:0;
+    width: 100%;
+} 
+#bsPhotoGalleryModal .modal-body {
+    padding:0px !important;
+    text-align: center;
+}
+#bsPhotoGalleryModal .bsp-text-container {
+  text-align:left;
+}
+
+#bsPhotoGalleryModal .bsp-close {
+  position: absolute;
+  right: -8px;
+  top: -7px;
+  background: rgba(255, 255, 255, 0.89);
+  padding: 0px 8px 5px;
+  border: 1px solid rgba(0,0,0,.49);
+  border-radius: 50%;
+}
+#bsPhotoGalleryModal .bsp-close:hover {
+  cursor: pointer;
+  opacity:.6;
+}
+
+#bsPhotoGalleryModal .bsp-close img {
+  width: 13px;
+  height: 13px;
+}
+
+.bspHasModal {
+  cursor: pointer;
+}
+
+
+#bsPhotoGalleryModal a.bsp-controls img {
+  width: 20px;
+  height: 35px;  
+}
+
+a.bsp-controls,
+a.bsp-controls:visited,
+a.bsp-controls:active {
+  position: absolute;
+  top: 46%;  
+  background: rgba(255, 255, 255, 0.49);  
+}
+
+a.bsp-controls.next {
+  right:0px;
+  border-top: 1px solid rgba(0,0,0,.49);
+  border-left: 1px solid rgba(0,0,0,.49);
+  border-bottom: 1px solid rgba(0,0,0,.49);
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  padding-left: 4px;
+  border-right:none;
+}
+a.bsp-controls.previous {
+  left:0px;
+  border-top: 1px solid rgba(0,0,0,.49);
+  border-right: 1px solid rgba(0,0,0,.49);
+  border-bottom: 1px solid rgba(0,0,0,.49);
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-right: 4px;
+  border-left:none;
+}
+a.bsp-controls:hover {
+  opacity:.6;
+  text-shadow: none;
+}
+.bsp-text-container {
+  clear:both;
+  display:block;
+}
+
+.bspImgWrapper {
+  width: 100%;
+  height: 200px;
+  background-position-x: center !important;
+  background-position-y: center !important;
+  background-size: cover !important;
+}
+
+@media (min-width: 992px){
+  #bsPhotoGalleryModal .modal-lg {
+      max-width: 1000px;
+      max-height: 500px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .bspImgWrapper {
+    height: 150px;
+  }
+}
+
+
+.all-images {
+  align-content: center;
+  margin-top: 70px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
+.container video {
+  margin: 0;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.video-details {
+  display: flex;
+}
+
+.info {
+  font-size: 16px;
+  padding: 40px;
+  font-family: Helvetica, sans-serif; 
+  font-weight: 200;
+  line-height: 1.3em;
+}
+
+.photography--types {
+  margin-bottom: 80px;
+}
+
+.social {
+  font-size: 30px;
+  line-height: 1.4em;
+}
+
+.social span {
+  margin: 10px;
+}
+
+.contact {
+  width: 40%;
+  background-color: #ced4da;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 100px;
+}
