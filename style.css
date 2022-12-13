@@ -113,6 +113,7 @@ ul[data-bsp-ul-index] li {
 #bsPhotoGalleryModal .modal-dialog img {
     text-align:center;
     margin:0;
+    image-resolution: 300dpi;
     width: 100%;
 } 
 #bsPhotoGalleryModal .modal-body {
@@ -140,6 +141,7 @@ ul[data-bsp-ul-index] li {
 #bsPhotoGalleryModal .bsp-close img {
   width: 13px;
   height: 13px;
+  image-resolution: 300dpi;
 }
 
 .bspHasModal {
@@ -150,6 +152,7 @@ ul[data-bsp-ul-index] li {
 #bsPhotoGalleryModal a.bsp-controls img {
   width: 20px;
   height: 35px;  
+  image-resolution: 300dpi;
 }
 
 a.bsp-controls,
@@ -218,18 +221,36 @@ a.bsp-controls:hover {
 
 .container {
   margin: 0;
-  padding: 0;
-  margin-top: 70px;
-}
-
-.container video {
-  margin: 0;
+  padding: 0 4px;
   display: flex;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: 7%;
 }
 
 .video-details {
-  display: flex;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.video-details iframe {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .video-details {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video-details {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .info {
@@ -245,7 +266,7 @@ a.bsp-controls:hover {
 }
 
 .social {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4em;
 }
 
